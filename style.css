@@ -23,24 +23,23 @@ img.btn {
     /* switched from default (flex-start, see below) */
 }
 
-#controls-container>div {
+#controls-container>button {
     width: 100px;
     height: auto;
     background-color: #fff;
     color: #000000;
     border: 1px solid #c4c4c4;
     border-radius: 15px;
-    padding: 12px;
-    text-align: center;
+    padding: 8px;
     vertical-align: middle;
-    line-height: 2em;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-
+    align-items: center;
+    line-height: 2em;
 }
 
-#controls-container>div:hover {
+#controls-container>button:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: 0.4s;
 }
