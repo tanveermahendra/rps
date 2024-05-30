@@ -1,3 +1,16 @@
+function printResult(x) {
+    if (x === 1) {
+        document.getElementById("result").innerHTML = "You win!";
+    }
+    else if (x === 0){
+        document.getElementById("result").innerHTML = "You lose :(";
+    }
+}
+function getRandomIntInclusive(min, max) {
+    const minCeiled = Math.ceil(min);
+    const maxFloored = Math.floor(max);
+    return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled); // The maximum is inclusive and the minimum is inclusive
+}
 function rpsLogic(x = 0) {
     player_choice = x
     console.log(player_choice)
@@ -10,32 +23,27 @@ function rpsLogic(x = 0) {
     switch (computer_choice) {
         case 1:
             if (player_choice === 2) {
-                document.getElementById("result").innerHTML = "You win!";
+                printResult(1)
             }
             else {
-                document.getElementById("result").innerHTML = "You lose :(";
+                printResult(0)
             }
             break;
         case 2:
             if (player_choice === 3) {
-                document.getElementById("result").innerHTML = "You win!";
+                printResult(1)
             }
             else {
-                document.getElementById("result").innerHTML = "You lose :(";
+                printResult(0)
             }
             break;
         case 3:
             if (player_choice === 1) {
-                document.getElementById("result").innerHTML = "You win!";
+                printResult(1)
             }
             else {
-                document.getElementById("result").innerHTML = "You lose :(";
+                printResult(0)
             }
             break;
     }
-}
-function getRandomIntInclusive(min, max) {
-    const minCeiled = Math.ceil(min);
-    const maxFloored = Math.floor(max);
-    return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled); // The maximum is inclusive and the minimum is inclusive
 }
