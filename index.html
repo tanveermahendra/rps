@@ -1,55 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-    .content {
-        max-width: 500px;
-        margin: auto;
-        justify-content: center;
-        text-align: center;
-    }
-
-    img.btn {
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-        max-width: fit-content;
-    }
-
-    #title-image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-    }
-
-    button {
-        height: fit-content;
-        background-color: #fff;
-        color: #000000;
-        border: 1px solid #c4c4c4;
-        border-radius: 15px;
-        padding: 12px;
-        text-align: center;
-        vertical-align: middle;
-        line-height: 2em;
-        overflow: hidden;
-    }
-
-    button:hover {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        transition: 0.7s;
-    }
-
-    button>img,
-    button>span {
-        vertical-align: middle;
-    }
-</style>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -57,18 +13,20 @@
         <img id="title-image" src="rps-title.png" alt="Rock Paper Scissors cover image">
         <h1>Rock Paper Scissors Game</h1>
         <p id="result">Choose Rock, Paper or Scissors</p>
-        <button onclick="rpsLogic(1)">
-            <img class="btn" src="rock.png" alt="r-buttonpng" border="0" />
-            <span>Rock</span>
-        </button>
-        <button onclick="rpsLogic(2)">
-            <img class="btn" src="paper.png" alt="p-buttonpng" border="0" />
-            <span>Paper</span>
-        </button>
-        <button onclick="rpsLogic(3)">
-            <img class="btn" src="scissors.png" alt="s-buttonpng" border="0" />
-            <span>Scissors</span>
-        </button>
+        <div id="controls-container">
+            <div onclick="rpsLogic(1)">
+                <img class="btn" src="rock.png" alt="r-buttonpng" />
+                <div>Rock</div>
+            </div>
+            <div onclick="rpsLogic(2)">
+                <img class="btn" src="paper.png" alt="p-buttonpng" />
+                <div>Paper</div>
+            </div>
+            <div onclick="rpsLogic(3)">
+                <img class="btn" src="scissors.png" alt="s-buttonpng" />
+                <div>Scissors</div>
+            </div>
+        </div>
     </div>
 
 </body>

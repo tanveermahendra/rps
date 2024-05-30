@@ -1,0 +1,52 @@
+.content {
+    max-width: 500px;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+img.btn {
+    width: 100%;
+    overflow: hidden;
+    align-items: baseline;
+}
+
+#controls-container {
+    display: flex;
+    /* establish flex container */
+    flex-direction: row;
+    /* default value; can be omitted */
+    flex-wrap: nowrap;
+    /* default value; can be omitted */
+    justify-content: space-between;
+    /* switched from default (flex-start, see below) */
+}
+
+#controls-container>div {
+    width: 100px;
+    height: auto;
+    background-color: #fff;
+    color: #000000;
+    border: 1px solid #c4c4c4;
+    border-radius: 15px;
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+#controls-container>div:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.4s;
+}
+
+#title-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
